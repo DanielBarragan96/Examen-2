@@ -32,6 +32,7 @@ localparam ADD = 4'b0011;
 localparam SUB = 4'b0100;
 
 localparam MULT = 4'b0101;
+localparam MOV  = 4'b0111;
    
    always @ (A or B or ALUOperation)
      begin
@@ -48,6 +49,8 @@ localparam MULT = 4'b0101;
 			ALUResult= ~(A|B);
 		  MULT:
 		   ALUResult= A * B;
+		  MOV:
+		   ALUResult = A;
 		default:
 			ALUResult= 0;
 		endcase // case(control)

@@ -1,5 +1,5 @@
 Flow report for MIPS_Processor
-Mon Jun 26 19:45:05 2017
+Mon Jun 26 19:54:41 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun 26 19:45:05 2017       ;
+; Flow Status                        ; Successful - Mon Jun 26 19:54:41 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_Processor                              ;
 ; Top-level Entity Name              ; MIPS_Processor                              ;
@@ -63,7 +63,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/26/2017 19:44:34 ;
+; Start date & time ; 06/26/2017 19:54:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_Processor      ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 62336542550997.149852427309924         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 62336542550997.149852485108600         ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -87,8 +87,8 @@ agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:33     ; 1.0                     ; 583 MB              ; 00:01:13                           ;
-; Total                  ; 00:00:33     ; --                      ; --                  ; 00:01:13                           ;
+; Analysis & Elaboration ; 00:00:32     ; 1.0                     ; 583 MB              ; 00:01:13                           ;
+; Total                  ; 00:00:32     ; --                      ; --                  ; 00:01:13                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -32,6 +32,7 @@ localparam BEQ = 6'h4;
 localparam BNE = 6'h5;
 
 localparam MULT = 6'h1;
+localparam MOV = 6'h6;
 
 reg [10:0] ControlValues;
 
@@ -43,6 +44,7 @@ always@(OP) begin
 		BEQ:  		  ControlValues= 11'b0_000_00_01_001;
 		BNE:  		  ControlValues= 11'b0_000_00_10_001;
 		MULT:  		  ControlValues= 11'b1_001_00_00_010;
+		MOV:       	  ControlValues= 11'b1_001_00_00_011;
 		default:
 			ControlValues= 10'b0000000000;
 		endcase
