@@ -1,5 +1,5 @@
-Analysis & Synthesis report for MIPS_Processor_TB
-Mon Jun 26 19:19:09 2017
+Analysis & Elaboration report for MIPS_Processor_TB
+Mon Jun 26 19:27:25 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -7,10 +7,10 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -35,9 +35,9 @@ agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Jun 26 19:19:09 2017           ;
+; Analysis & Elaboration Status      ; Failed - Mon Jun 26 19:27:25 2017           ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_Processor_TB                           ;
 ; Top-level Entity Name              ; MIPS_Processor_TB                           ;
@@ -54,8 +54,24 @@ agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
@@ -139,30 +155,14 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jun 26 19:18:20 2017
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Examen2 -c MIPS_Processor_TB
+    Info: Processing started: Mon Jun 26 19:26:47 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Examen2 -c MIPS_Processor_TB --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file signextend.v
@@ -183,8 +183,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file muxregi
     Info (12023): Found entity 1: MUXRegisterFile File: C:/MIPS_Projects/Examen 2/MUXRegisterFile.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file multiplexer2to1.v
     Info (12023): Found entity 1: Multiplexer2to1 File: C:/MIPS_Projects/Examen 2/Multiplexer2to1.v Line: 13
-Info (12021): Found 1 design units, including 1 entities, in source file mips_processor_tb.v
-    Info (12023): Found entity 1: MIPS_Processor_TB File: C:/MIPS_Projects/Examen 2/MIPS_Processor_TB.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file mips_processor.v
     Info (12023): Found entity 1: MIPS_Processor File: C:/MIPS_Projects/Examen 2/MIPS_Processor.v Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file decoderregisterfile.v
@@ -201,15 +199,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: ALU File: C:/MIPS_Projects/Examen 2/ALU.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file adder32bits.v
     Info (12023): Found entity 1: Adder32bits File: C:/MIPS_Projects/Examen 2/Adder32bits.v Line: 13
+Warning (12125): Using design file mips_processor_tb.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MIPS_Processor_TB File: C:/MIPS_Projects/Examen 2/mips_processor_tb.v Line: 15
 Info (12127): Elaborating entity "MIPS_Processor_TB" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor_TB.v(18): object "PortIn" assigned a value but never read File: C:/MIPS_Projects/Examen 2/MIPS_Processor_TB.v Line: 18
-Error (10119): Verilog HDL Loop Statement error at MIPS_Processor_TB.v(35): loop with non-constant loop condition must terminate within 250 iterations File: C:/MIPS_Projects/Examen 2/MIPS_Processor_TB.v Line: 35
-Warning (10855): Verilog HDL warning at MIPS_Processor_TB.v(34): initial value for variable clk should be constant File: C:/MIPS_Projects/Examen 2/MIPS_Processor_TB.v Line: 34
+Warning (10036): Verilog HDL or VHDL warning at mips_processor_tb.v(18): object "PortIn" assigned a value but never read File: C:/MIPS_Projects/Examen 2/mips_processor_tb.v Line: 18
+Error (10119): Verilog HDL Loop Statement error at mips_processor_tb.v(35): loop with non-constant loop condition must terminate within 250 iterations File: C:/MIPS_Projects/Examen 2/mips_processor_tb.v Line: 35
+Warning (10855): Verilog HDL warning at mips_processor_tb.v(34): initial value for variable clk should be constant File: C:/MIPS_Projects/Examen 2/mips_processor_tb.v Line: 34
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
-    Error: Peak virtual memory: 572 megabytes
-    Error: Processing ended: Mon Jun 26 19:19:09 2017
-    Error: Elapsed time: 00:00:49
-    Error: Total CPU time (on all processors): 00:01:23
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 4 warnings
+    Error: Peak virtual memory: 573 megabytes
+    Error: Processing ended: Mon Jun 26 19:27:25 2017
+    Error: Elapsed time: 00:00:38
+    Error: Total CPU time (on all processors): 00:01:18
 
 

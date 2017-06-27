@@ -19,14 +19,14 @@
 #
 # Quartus Prime
 # Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-# Date created = 19:16:24  June 26, 2017
+# Date created = 19:28:58  June 26, 2017
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		MIPS_Processor_TB_assignment_defaults.qdf
+#		MIPS_Processor_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -39,9 +39,9 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor_TB
+set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:16:24  JUNE 26, 2017"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:28:58  JUNE 26, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
 set_global_assignment -name VERILOG_FILE SignExtend.v
 set_global_assignment -name VERILOG_FILE ShiftLeft2.v
@@ -52,6 +52,7 @@ set_global_assignment -name VERILOG_FILE PC_Register.v
 set_global_assignment -name VERILOG_FILE ORGate.v
 set_global_assignment -name VERILOG_FILE MUXRegisterFile.v
 set_global_assignment -name VERILOG_FILE Multiplexer2to1.v
+set_global_assignment -name VERILOG_FILE MIPS_Processor_TB.v
 set_global_assignment -name VERILOG_FILE MIPS_Processor.v
 set_global_assignment -name VERILOG_FILE DecoderRegisterFile.v
 set_global_assignment -name VERILOG_FILE DataMemory.v
